@@ -1,5 +1,5 @@
 import Foundation
-
+#if os(iOS)
 struct ChangeWithIndexPath {
   let inserts: [IndexPath]
   let deletes: [IndexPath]
@@ -33,3 +33,4 @@ extension Int {
     return IndexPath(item: self, section: section)
   }
 }
+#endif
